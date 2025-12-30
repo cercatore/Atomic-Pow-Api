@@ -8,34 +8,7 @@ from atomic_agent.vectorstore import LocalVectorStore
 from atomic_agent.prompt import generate_prompt
 from atomic_agent.agent import agent
 from atomic_agents import BasicChatInputSchema
-from atomic_agents.lib.base.base_io_schema import BaseIOSchema
 from pydantic import Field
-
-# -------------------------------------------------
-# Schemi input/output (model_config incluso)
-# -------------------------------------------------
-
-class ChatInputSchema(BaseIOSchema):
-    """
-    Input schema for chat messages from the user.
-    """
-    chat_message: str = Field(..., description="The user's input message")
-
-    model_config = {
-        "title": "ChatInputSchema",
-        "description": "Input schema for chat messages from the user."
-    }
-
-class ChatOutputSchema(BaseIOSchema):
-    """
-    Output schema for chat messages from the agent.
-    """
-    chat_message: str = Field(..., description="The agent's response message")
-
-    model_config = {
-        "title": "ChatOutputSchema",
-        "description": "Output schema for chat messages from the agent."
-    }
 
 # -------------------------------------------------
 # FastAPI App
