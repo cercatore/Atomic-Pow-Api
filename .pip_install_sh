@@ -1,0 +1,5 @@
+poetry add atomic-agents instructor openai pydantic
+
+poetry add rich
+poetry add atomic-agents instructor openai pydantic tiktoken pypdf
+

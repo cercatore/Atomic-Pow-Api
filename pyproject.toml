@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fottutoagent"
+version = "0.1.0"
+description = ""
+authors = ["ClaudioTheGolfer"]
+readme = "README.md"
+package-mode = true
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+python-dotenv = ">=1.2.1,<2.0.0"
+rich = ">=13.7.1,<14.0.0"
+instructor = "*"
+openai = "*"
+pydantic = "*"
+tiktoken = "*"
+pypdf = "*"
+fastapi = "^0.128.0"
+uvicorn = "^0.40.0"
+numpy = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
