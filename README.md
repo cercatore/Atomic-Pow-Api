@@ -20,7 +20,7 @@ cd Atomic-Pow-Api
 rm -rf poetry.lock
 
 poetry install
-
+----> ignore the error in RED :pig_nose:
 optionally show the dep, if you want to poetry use plugin packages change this
 pyproject.toml:
 
@@ -31,4 +31,8 @@ run the api through that goes fastapi
 poetry run python -m atomic_agent.main_fatsapi
 
 enjoy the fun!
+
+this proj was made with :hearth: 
+
+please :star2: this
 
